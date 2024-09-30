@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
           buttonBantu.appendChild(paraButtonBantu);
 
           window.addEventListener("scroll", function () {
-            const scrollPosition = window.scrollY + window.innerHeight;
+            const scrollPosition = window.scrollY + window.innerHeight + 56;
             const documentHeight = document.documentElement.scrollHeight;
             console.log(scrollPosition);
             console.log(documentHeight);

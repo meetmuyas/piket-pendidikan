@@ -92,7 +92,7 @@ getDocs(colRef).then((snapshot) => {
         const paraButtonUbah = document.createElement("p");
         paraButtonUbah.innerText = "Ubah";
         paraButtonUbah.className =
-          "w-full p-4 rounded-xl bg-gray-950 text-white font-bold";
+          "w-full p-4 rounded-xl bg-gray-950 border border-gray-950 text-white font-bold";
         footer.appendChild(buttonUbah);
         buttonUbah.appendChild(paraButtonUbah);
 
@@ -204,7 +204,7 @@ getDocs(colRef).then((snapshot) => {
           buttonHapus.addEventListener("click", function () {
             event.preventDefault();
             const confirmDelete = confirm(
-              "Apakah Anda yakin ingin menghapus data ini?"
+              `Apakah kamu ingin menghapus datamu dari jadwal piket pada hari Ahad, ${formattedDate}?`
             );
             console.log(confirmDelete);
             if (confirmDelete) {
@@ -222,7 +222,7 @@ getDocs(colRef).then((snapshot) => {
                   // Redirect to index.html after 2 seconds
                   setTimeout(() => {
                     window.location.href = "index.html";
-                  }, 2000); // 2 seconds delay before redirecting
+                  }, 3000); // 3 seconds delay before redirecting
                 })
                 .catch((error) => {
                   console.error("Error deleting document: ", error);

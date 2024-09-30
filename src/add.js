@@ -180,7 +180,7 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
   if (!selectedRadio) {
     radioError = true;
     jadwalPiket.classList.add("border", "border-red-500");
-    warningJadwalPiket.innerHTML = "Pilih jadwal piket";
+    warningJadwalPiket.innerHTML = "Jadwal piket harus dipilih";
     warningJadwalPiket.className =
       "py-2 bg-red-500 text-white text-center border border-red-500 rounded-t-xl";
     warningJadwalPiket.scrollIntoView({ behavior: "smooth", block: "start" });
