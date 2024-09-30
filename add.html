@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bantu Pendidikan</title>
+  </head>
+  <body class="mx-auto text-sm bg-white">
+    <header class="w-full max-w-screen-xs mx-auto px-4 pt-4">
+      <div class="flex justify-between">
+        <button id="buttonBack" class="p-1 text-gray-950 hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+            />
+          </svg>
+        </button>
+        <button
+          id="buttonClose"
+          class="ml-auto p-2 bg-gray-100 text-gray-950 rounded-full"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="w-full max-w-screen-xs mx-auto px-4">
+      <h1 class="mt-8 text-2xl font-bold text-gray-950 text-center">
+        Bantu Pendidikan
+      </h1>
+      <p id="halaman" class="mt-1 text-gray-500 text-center mb-6">
+        Halaman 1/2
+      </p>
+      <section id="nama-jadwal-wrapper">
+        <div id="nama-pic" class="bg-gray-100 rounded-2xl mb-4 flex flex-col">
+          <p id="warning-nama-pic" class="hidden"></p>
+          <h2
+            class="mx-4 mt-4 text-gray-950 text-xl font-bold text-center mb-4"
+          >
+            Nama kamu
+          </h2>
+          <input
+            type="text"
+            placeholder="Masukkan nama"
+            class="mx-4 mb-4 border-none bg-transparent h-auto text-center text-gray-950 font-bold focus:outline-none placeholder:text-gray-400 caret-sky-500"
+          />
+        </div>
+        <div
+          id="jadwal-piket"
+          class="bg-gray-100 rounded-2xl mb-4 pb-4 flex flex-col"
+        >
+          <p id="warning-jadwal-piket" class="hidden"></p>
+          <h2
+            class="mx-4 mt-4 text-gray-950 text-xl font-bold text-center mb-4"
+          >
+            Pilih jadwal piket
+          </h2>
+        </div>
+      </section>
+      <section id="lunch-status" class="bg-gray-100 rounded-2xl mb-4 hidden">
+        <p id="warning-lunch-status" class="hidden"></p>
+        <h2 class="mt-4 mx-4 text-gray-950 text-xl font-bold text-center">
+          Mau ambil jatah makan siang gratis?
+        </h2>
+        <div class="mx-4">
+          <input type="radio" name="lunch" id="radio-lunch-true" value="true" />
+          <label
+            for="radio-lunch-true"
+            class="text-gray-950 border border-gray-300 font-bold"
+            >Mau dong</label
+          >
+        </div>
+        <div class="mx-4 mb-4">
+          <input
+            type="radio"
+            name="lunch"
+            id="radio-lunch-false"
+            value="false"
+          />
+          <label
+            for="radio-lunch-false"
+            class="text-gray-950 border border-gray-300 font-bold"
+            >Gak dulu</label
+          >
+        </div>
+      </section>
+      <section id="pic-ahad" class="bg-gray-100 rounded-xl flex flex-col gap-2">
+        <p id="warning-pic-ahad" class="hidden"></p>
+      </section>
+      <button class="mb-4 w-full max-w-screen-xs" id="button-lanjut">
+        <p class="w-full p-4 rounded-xl bg-gray-950 text-white font-bold">
+          Selanjutnya
+        </p>
+      </button>
+      <button class="my-4 w-full max-w-screen-xs hidden" id="button-submit">
+        <p class="w-full p-4 rounded-xl bg-gray-950 text-white font-bold">
+          Kirim
+        </p>
+      </button>
+    </main>
+    <script type="module" src="src/add.js"></script>
+  </body>
+</html>

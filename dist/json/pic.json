@@ -1,0 +1,295 @@
+{
+  "pic": [
+    {
+      "event": "bsq-offline",
+      "assignments": {
+        "pic1": {
+          "picId": "bOPerlap",
+          "type": "PIC Perlengkapan",
+          "quota": "(Min. 4 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "bOMenDokIkh",
+          "type": "PIC Mentor & Dokumentasi Ikhwan",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "bOMenDokAkh",
+          "type": "PIC Mentor & Dokumentasi Akhwat",
+          "quota": "(Min. 2 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "bOKons",
+          "type": "PIC Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "bsq-via-zoom",
+      "assignments": {
+        "pic1": {
+          "picId": "bvZBreak",
+          "type": "PIC Membuat Break Out Room",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "bvZStandIkh",
+          "type": "PIC Stand by Zoom Ikhwan",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "bvZStandAkh",
+          "type": "PIC Stand by Zoom Akhwat",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "bvZMenDokIkh",
+          "type": "PIC Mentor & Dokumentasi Ikhwan ",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "bvZMenDokAkh",
+          "type": "PIC Mentor & Dokumentasi Akhwat",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "sii-angdas-offline",
+      "assignments": {
+        "pic1": {
+          "picId": "sAOPerlap",
+          "type": "PIC Perlengkapan",
+          "quota": "(Min. 2 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "sAOPengantar",
+          "type": "PIC Pengantar Ustadz",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "sAORekam",
+          "type": "PIC Rekam Suara",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "sAODokKons",
+          "type": "PIC Dokumentasi & Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "sii-angdas-via-zoom",
+      "assignments": {
+        "pic1": {
+          "picId": "sAvZBreak",
+          "type": "PIC Membuat Break Out Room",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "sAvZStandyIkh",
+          "type": "PIC Stand by Zoom Ikhwan",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "sAvZStandyAkh",
+          "type": "PIC Stand by Zoom Akhwat",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "sAvZPengantar",
+          "type": "PIC Ustadz/Ustadzah",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "sAvZAbs",
+          "type": "PIC Absensi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic6": {
+          "picId": "sAvZRecord",
+          "type": "PIC Record",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic7": {
+          "picId": "sAvZTimeK",
+          "type": "PIC Time Keeper",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic8": {
+          "picId": "sAvZDok",
+          "type": "PIC Dokumentasi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "sii-lanjutan-offline",
+      "assignments": {
+        "pic1": {
+          "picId": "sLOPerlap",
+          "type": "PIC Perlengkapan",
+          "quota": "(Min. 2 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "sLOPengantar",
+          "type": "PIC Pengantar Ustadz",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "sLORekam",
+          "type": "PIC Rekam Suara",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "sLODokKons",
+          "type": "PIC Dokumentasi & Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "sii-lanjutan-via-zoom",
+      "assignments": {
+        "pic1": {
+          "picId": "sLvZBreak",
+          "type": "PIC Membuat Break Out Room",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "sLvZStandIkh",
+          "type": "PIC Stand by Zoom Ikhwan",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "sLvZStandAkh",
+          "type": "PIC Stand by Zoom Akhwat",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "sLvZPengantar",
+          "type": "PIC Ustadz/Ustadzah",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "sLvZAbs",
+          "type": "PIC Absensi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic6": {
+          "picId": "sLvZRecord",
+          "type": "PIC Record",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic7": {
+          "picId": "sLvZTimeK",
+          "type": "PIC Time Keeper",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic8": {
+          "picId": "sLvZDok",
+          "type": "PIC Dokumentasi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "mentor-offline",
+      "assignments": {
+        "pic1": {
+          "picId": "mOPerlap",
+          "type": "PIC Perlengkapan",
+          "quota": "(Min. 2 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "mOPendamping",
+          "type": "PIC Pendamping Ustadz/Ustadzah",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic3": {
+          "picId": "mODok",
+          "type": "PIC Dokumentasi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic4": {
+          "picId": "mOKons",
+          "type": "PIC Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "after-sii-angdas-offline",
+      "assignments": {
+        "pic1": {
+          "picId": "asAOPIC",
+          "type": "PIC",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "asAOSupp",
+          "type": "Supporting",
+          "quota": "(Min. 5 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "after-sii-lanjutan-offline",
+      "assignments": {
+        "pic1": {
+          "picId": "asLOPIC",
+          "type": "PIC",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic2": {
+          "picId": "asLOSupp",
+          "type": "Supporting",
+          "quota": "(Min. 5 orang)",
+          "desc": "Membantu"
+        }
+      }
+    }
+  ]
+}

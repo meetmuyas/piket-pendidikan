@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jadwal Piket Pendidikan</title>
+  </head>
+  <body class="mx-auto text-sm bg-white">
+    <header
+      id="header"
+      class="w-full max-w-screen-xs px-4 fixed left-1/2 -translate-x-1/2 top-0 z-10 bg-sky-200"
+    >
+      <p id="para-title" class="pt-8 text-center rounded-t-2xl text-sky-700">
+        Jadwal Piket Pendidikan
+      </p>
+      <nav id="nav" class="pt-2 flex justify-between text-gray-950">
+        <button id="prevBtn" href="" class="my-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            aria-label="Previous"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <h1 id="dateDisplay" class="text-2xl font-bold">Ahad, 22 Sep 2024</h1>
+        <button id="nextBtn" href="" class="my-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            aria-label="Next"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </nav>
+      <p id="para-kons" class="pt-4 text-center">
+        <span>Perkiraan Konsumsi:</span>
+        <span id="totalLunch" class="font-bold">0 pax</span>
+      </p>
+    </header>
+    <main
+      class="w-full max-w-screen-xs mx-auto mt-52px px-4 pb-88px pt-24 flex flex-col gap-4 bg-sky-200 min-h-screen"
+    ></main>
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,466 @@
+{
+  "dates": [
+    {
+      "dateOfPendidikan": "2024-08-10T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ General",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Pembekalan Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ],
+        "after-sii-angdas": [
+          "Welcoming Day!",
+          "offline",
+          "after-sii-angdas-offline",
+          "12:30 - Selesai"
+        ],
+        "after-sii-lanjutan": [
+          "SII Ziarah",
+          "offline",
+          "after-sii-lanjutan-offline",
+          "12:30 - Selesai"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-08-17T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Pre Test",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-via-zoom",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-08-24T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "after-sii-angdas": [
+          "YISC 17-an",
+          "offline",
+          "after-sii-angdas-offline",
+          "12:30 - Selesai"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-08-31T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "via-zoom",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "via-zoom",
+          "sii-angdas-via-zoom",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "via-zoom",
+          "sii-lanjutan-via-zoom",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-09-07T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ],
+        "after-sii-angdas": [
+          "Sosialisasi Kortan",
+          "offline",
+          "after-sii-angdas-offline",
+          "12:30 - Selesai"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-09-14T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "via-zoom",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "via-zoom",
+          "sii-angdas-via-zoom",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "via-zoom",
+          "sii-lanjutan-via-zoom",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-09-21T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ],
+        "after-sii-angdas": [
+          "Potluck Cakortan",
+          "offline",
+          "after-sii-angdas-offline",
+          "12:30 - Selesai"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-09-28T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-10-05T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "via-zoom",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "via-zoom",
+          "sii-angdas-via-zoom",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "via-zoom",
+          "sii-lanjutan-via-zoom",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-10-12T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "via-zoom",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-10-19T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-10-26T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-11-02T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "sii-lanjutan": [
+          "SII Lanjutan",
+          "offline",
+          "sii-lanjutan-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-11-09T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "via-zoom",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "via-zoom",
+          "sii-angdas-via-zoom",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-11-16T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-11-23T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "via-zoom",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "via-zoom",
+          "sii-angdas-via-zoom",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-11-30T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "BSQ Peserta",
+          "offline",
+          "bsq-offline",
+          "07:00 - 10:00"
+        ],
+        "sii-angdas": [
+          "SII Angdas",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "bsq-mentor": [
+          "Talaqqi Mentor",
+          "offline",
+          "mentor-offline",
+          "09:30 - 12:30"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-12-07T17:00:00Z",
+      "events": {
+        "bsq-peserta": ["UAS BSQ", "offline", "bsq-offline", "07:00 - 10:00"],
+        "sii-angdas": [
+          "UAS SII",
+          "offline",
+          "sii-angdas-offline",
+          "09:30 - 12:30"
+        ],
+        "after-sii-angdas": [
+          "Potluck Final",
+          "offline",
+          "after-sii-angdas-offline",
+          "12:30 - Selesai"
+        ]
+      }
+    },
+    {
+      "dateOfPendidikan": "2024-12-14T17:00:00Z",
+      "events": {
+        "bsq-peserta": [
+          "Susulan BSQ",
+          "offline",
+          "bsq-via-zoom",
+          "07:00 - 10:00"
+        ]
+      }
+    }
+  ]
+}
