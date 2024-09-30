@@ -140,7 +140,7 @@ fetch("../dist/json/dates.json")
 // Add event listener to the button
 document.getElementById("button-lanjut").addEventListener("click", function () {
   // Get the name input value
-  const inputNama = document.querySelector("input[type='text']").value;
+  const inputNama = document.querySelector("input[type='text']").value.trim();
 
   // Get the selected radio value (if any)
   const selectedRadio = document.querySelector(
