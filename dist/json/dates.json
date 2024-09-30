@@ -58,7 +58,7 @@
         ],
         "sii-lanjutan": [
           "SII Lanjutan",
-          "offline",
+          "via-zoom",
           "sii-lanjutan-via-zoom",
           "09:30 - 12:30"
         ]
@@ -456,7 +456,7 @@
       "events": {
         "bsq-peserta": [
           "Susulan BSQ",
-          "offline",
+          "via-zoom",
           "bsq-via-zoom",
           "07:00 - 10:00"
         ]
