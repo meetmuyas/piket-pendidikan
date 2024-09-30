@@ -424,6 +424,7 @@ document.getElementById("button-submit").addEventListener("click", function () {
     "input[name='dateOption']:checked"
   );
   const selectedDateValue = selectedRadio ? selectedRadio.value : null;
+  const label = selectedRadio.nextSibling;
 
   // Create a Date object from the date string
   const date = new Date(selectedDateValue);
@@ -510,7 +511,7 @@ document.getElementById("button-submit").addEventListener("click", function () {
 
       // Show success snackbar
       showSnackbar(
-        `Berhasil menambahkan ${nameValue} ke jadwal piket`,
+        `Berhasil menambahkan ${nameValue} ke jadwal piket pada hari Ahad, ${label.innerHTML}`,
         "success"
       );
 
