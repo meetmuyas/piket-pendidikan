@@ -278,13 +278,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.log(bundledEventTypes);
                     const firstSpan = paraKOns.querySelector("span");
                     if (bundledEventTypes === "offline && via-zoom") {
-                      firstSpan.textContent = "Perkiraan Konsumsi";
+                      firstSpan.textContent = "Perkiraan Konsumsi:";
                       totalLunch.textContent = `${totalLunchCount} pax`;
                     } else if (bundledEventTypes === "via-zoom && offline") {
-                      firstSpan.textContent = "Perkiraan Konsumsi";
+                      firstSpan.textContent = "Perkiraan Konsumsi:";
                       totalLunch.textContent = `${totalLunchCount} pax`;
                     } else if (bundledEventTypes === "offline") {
-                      firstSpan.textContent = "Perkiraan Konsumsi";
+                      firstSpan.textContent = "Perkiraan Konsumsi:";
                       totalLunch.textContent = `${totalLunchCount} pax`;
                     } else {
                       firstSpan.textContent = "(Online via Zoom)";
