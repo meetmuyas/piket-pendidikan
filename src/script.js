@@ -139,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const events = dates[currentIndex].events;
+      const uniqueEventTypes = new Set();
 
       // Populate events
       Object.entries(events).forEach(
@@ -267,14 +268,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     // After processing all the documents, set the total lunch count
                     const totalLunch = document.getElementById("totalLunch");
-
-                    // If no lunch entries are found, make sure to reset the count to 0
                     if (totalLunchCount === 0) {
                       totalLunchCount = 0;
                     }
 
-                    // Update the total lunch count in the UI
-                    totalLunch.textContent = `${totalLunchCount} pax`;
+                    uniqueEventTypes.add(eventType);
+                    const bundledEventTypes =
+                      Array.from(uniqueEventTypes).join(" && ");
+                    console.log(bundledEventTypes);
+                    const firstSpan = paraKOns.querySelector("span");
+                    if (bundledEventTypes === "offline && via-zoom") {
+                      firstSpan.textContent = "Perkiraan Konsumsi";
+                      totalLunch.textContent = `${totalLunchCount} pax`;
+                    } else if (bundledEventTypes === "via-zoom && offline") {
+                      firstSpan.textContent = "Perkiraan Konsumsi";
+                      totalLunch.textContent = `${totalLunchCount} pax`;
+                    } else if (bundledEventTypes === "offline") {
+                      firstSpan.textContent = "Perkiraan Konsumsi";
+                      totalLunch.textContent = `${totalLunchCount} pax`;
+                    } else {
+                      firstSpan.textContent = "(Online via Zoom)";
+                      totalLunch.textContent = "";
+                    }
                   })
                   .catch((err) => {
                     console.log(err);
