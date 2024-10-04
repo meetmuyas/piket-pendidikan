@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   "mx-4 mt-5 pb-5 flex flex-col gap-2 border-b border-b-gray-300 last:border-b-0";
                 const picTypeQuota = document.createElement("h3");
                 picTypeQuota.className = "text-gray-950 font-bold";
-                picTypeQuota.innerHTML = `${type} ${quota}`;
+                picTypeQuota.innerHTML = `${type}`;
                 const nameOl = document.createElement("ol");
                 nameOl.className =
                   "flex flex-col gap-2 list-decimal list-inside text-sky-600 underline underline-offset-2 decoration-solid";
