@@ -22,12 +22,18 @@
           "desc": "Membantu"
         },
         "pic4": {
+          "picId": "bOBuku",
+          "type": "PIC Pembagian Buku",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
           "picId": "bOAntarKons",
           "type": "PIC Pengantar Konsumsi",
           "quota": "(Min. 1 orang)",
           "desc": "Membantu"
         },
-        "pic5": {
+        "pic6": {
           "picId": "bOMarbot",
           "type": "PIC Bayar Sewa Marbot",
           "quota": "(Min. 1 orang)",
