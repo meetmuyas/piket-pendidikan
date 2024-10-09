@@ -76,7 +76,7 @@ getDocs(colRef).then((snapshot) => {
         header.appendChild(detailName);
 
         const date = new Date(dateMatches.dateOfPendidikan);
-        const options = { day: "2-digit", month: "short", year: "numeric" };
+        const options = { day: "2-digit", month: "long", year: "numeric" };
         const formattedDate = date.toLocaleDateString("id-ID", options);
 
         const detailDate = document.createElement("p");

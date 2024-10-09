@@ -76,7 +76,7 @@ getDocs(colRef).then((snapshot) => {
         header.appendChild(detailName);
 
         const date = new Date(dateMatches.dateOfPendidikan);
-        const options = { day: "2-digit", month: "short", year: "numeric" };
+        const options = { day: "2-digit", month: "long", year: "numeric" };
         const formattedDate = date.toLocaleDateString("id-ID", options);
 
         const detailDate = document.createElement("p");
@@ -215,7 +215,7 @@ getDocs(colRef).then((snapshot) => {
 
                   // Show success message (snackbar)
                   showSnackbarDelete(
-                    `Berhasil menghapus ${contName} dari jadwal piket di hari Ahad, ${formattedDate}`,
+                    `Berhasil menghapus ${contName} dari jadwal piket pada hari Ahad, ${formattedDate}`,
                     "success"
                   );
 

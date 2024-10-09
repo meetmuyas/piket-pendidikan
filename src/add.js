@@ -32,9 +32,8 @@ document.getElementById("buttonClose").addEventListener("click", function () {
 fetch("../dist/json/dates.json")
   .then((response) => response.json())
   .then((data) => {
-    // Get the section where we will append the radio buttons
-    const jadwalPiket = document.getElementById("jadwal-piket");
-
+    // Get the section where we will append the dates
+    const displayDate = document.querySelector("h1");
     // Helper function to get the nearest Sunday from today
     function getNearestSunday() {
       const today = new Date();
@@ -60,80 +59,32 @@ fetch("../dist/json/dates.json")
     // Get the nearest Sunday
     const nearestSunday = getNearestSunday();
 
-    // Filter dates that are >= nearest Sunday or today matches
-    const upcomingDates = data.dates.filter((dateObj) => {
+    // Find the first date that is >= nearest Sunday or today matches
+    const nearestSundayDate = data.dates.find((dateObj) => {
       const eventDate = new Date(dateObj.dateOfPendidikan);
       eventDate.setHours(0, 0, 0, 0); // Clear time for accurate comparison
       return eventDate >= nearestSunday || isTodayMatch(dateObj);
     });
 
-    // Function to create a radio button with label
-    function createRadioButton(dateObj, index) {
-      const dateFormatted = new Date(
-        dateObj.dateOfPendidikan
-      ).toLocaleDateString("id-ID", {
-        day: "2-digit",
-        month: "long",
-        year: "numeric",
-      });
-
-      const divSelectionDate = document.createElement("div");
-      divSelectionDate.className =
-        "flex items-center justify-start mx-4 mb-4 last:mb-0";
-
-      // Create the radio button input
-      const radio = document.createElement("input");
-      radio.type = "radio";
-      radio.name = "dateOption";
-      radio.value = dateObj.dateOfPendidikan;
-      radio.id = `radio-date-${index}`;
-
-      // Create the label for the radio button
-      const label = document.createElement("label");
-      label.setAttribute("for", `radio-date-${index}`);
-      label.textContent = dateFormatted;
-
-      // Default styles for label
-      label.className = "text-gray-950 border border-gray-300 font-bold";
-
-      // Append radio button and label to the section
-      jadwalPiket.appendChild(divSelectionDate);
-      divSelectionDate.appendChild(radio);
-      divSelectionDate.appendChild(label);
-
-      // Event listener to update styles on selection
-      radio.addEventListener("change", () => {
-        // Reset all labels
-        document
-          .querySelectorAll('input[name="dateOption"]')
-          .forEach((input) => {
-            const lbl = document.querySelector(`label[for="${input.id}"]`);
-            if (lbl) {
-              lbl.className = "text-gray-950 border border-gray-300 font-bold";
-            }
-          });
-
-        // Apply the active style to the selected label
-        if (radio.checked) {
-          label.className =
-            "text-gray-950 bg-gray-300 border border-gray-950 font-bold";
-        }
-
-        // Always get the most recent `jadwalPiket` element
-        const jadwalPiket = document.getElementById("jadwal-piket");
-        const warningJadwalPiket = document.getElementById(
-          "warning-jadwal-piket"
-        );
-        jadwalPiket.classList.remove("border", "border-red-500");
-        warningJadwalPiket.innerHTML = "";
-        warningJadwalPiket.className = "hidden";
-      });
-    }
-
-    // Loop through the filtered dates and create radio buttons
-    upcomingDates.forEach((dateObj, index) => {
-      createRadioButton(dateObj, index);
+    const dateFormatted = new Date(
+      nearestSundayDate.dateOfPendidikan
+    ).toLocaleDateString("id-ID", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
     });
+
+    // Now you have the nearest Sunday date in nearestSundayDate
+    if (nearestSundayDate) {
+      displayDate.innerHTML = `
+      Bantu Pendidikan:
+      <br />
+      Ahad, ${dateFormatted}
+      `;
+      displayDate.setAttribute("data-id", nearestSundayDate.dateOfPendidikan);
+    } else {
+      console.log("No upcoming dates found.");
+    }
   })
   .catch((error) => console.error("Error fetching dates:", error));
 
@@ -141,11 +92,6 @@ fetch("../dist/json/dates.json")
 document.getElementById("button-lanjut").addEventListener("click", function () {
   // Get the name input value
   const inputNama = document.querySelector("input[type='text']").value.trim();
-
-  // Get the selected radio value (if any)
-  const selectedRadio = document.querySelector(
-    "input[name='dateOption']:checked"
-  );
 
   // Get the necessary DOM elements
   const buttonBack = document.getElementById("buttonBack");
@@ -155,16 +101,12 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
   const namaPIC = document.getElementById("nama-pic");
   const warningNamaPIC = document.getElementById("warning-nama-pic");
 
-  const jadwalPiket = document.getElementById("jadwal-piket");
-  const warningJadwalPiket = document.getElementById("warning-jadwal-piket");
-
   // Reset sectionAssignment div before appending new content
   const sectionAssignment = document.getElementById("pic-ahad");
   sectionAssignment.innerHTML = ""; // Clear previous content
 
   // Check for errors in the input fields and radio buttons
   let inputError = false;
-  let radioError = false;
 
   // If name input is empty
   if (!inputNama) {
@@ -176,22 +118,10 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
     warningNamaPIC.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  // If no radio button is selected
-  if (!selectedRadio) {
-    radioError = true;
-    jadwalPiket.classList.add("border", "border-red-500");
-    warningJadwalPiket.innerHTML = "Jadwal piket harus dipilih";
-    warningJadwalPiket.className =
-      "py-2 bg-red-500 text-white text-center border border-red-500 rounded-t-xl";
-    warningJadwalPiket.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
-  if (inputError || radioError) {
+  if (inputError) {
     // Scroll into view of the first error found
     if (inputError) {
       warningNamaPIC.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else if (radioError) {
-      warningJadwalPiket.scrollIntoView({ behavior: "smooth", block: "start" });
     }
     return;
   } else {
@@ -200,7 +130,6 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
     buttonClose.classList.remove("ml-auto");
     namaJadwalWrapper.classList.add("hidden");
     namaPIC.classList.add("hidden");
-    jadwalPiket.classList.add("hidden");
 
     // Hide the 'Lanjut' button using Tailwind's hidden class
     document.getElementById("button-lanjut").classList.add("hidden");
@@ -262,12 +191,12 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
     fetch("../dist/json/pic.json").then((response) => response.json()),
   ])
     .then(([dateData, picData]) => {
-      // Get the selected radio value (if any)
-      const selectedRadioValue = selectedRadio.value;
+      const h1Date = document.querySelector("h1");
+      const datePicked = h1Date.getAttribute("data-id");
 
       // Find the matching date object from dateData
       const selectedDateEntry = dateData.dates.find(
-        (dateEntry) => dateEntry.dateOfPendidikan === selectedRadioValue
+        (dateEntry) => dateEntry.dateOfPendidikan === datePicked
       );
       // If a matching date entry is found
       if (selectedDateEntry) {
@@ -283,10 +212,13 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
         Object.entries(selectedDateEntry.events).forEach(
           ([key, [eventTitle, eventType, sectionId]]) => {
             const lunchStatus = document.getElementById("lunch-status");
+            const nameValue = document.querySelector("#nama-pic input").value;
             if (eventType === "via-zoom") {
               lunchStatus.classList.add("hidden");
             } else {
               lunchStatus.classList.remove("hidden");
+              const h2Lunch = lunchStatus.querySelector("h2");
+              h2Lunch.innerText = `${nameValue} mau ambil jatah makan siang gratis?`;
             }
 
             const divAssignment = document.createElement("div");
@@ -294,7 +226,7 @@ document.getElementById("button-lanjut").addEventListener("click", function () {
               "bg-gray-100 flex flex-col gap-4 pt-4 pb-6 mx-4 border-b-2 border-b-gray-400 border-dashed last:border-b-0";
 
             const h2Assignment = document.createElement("h2");
-            h2Assignment.innerHTML = `Bantu ${eventTitle} sebagai:`;
+            h2Assignment.innerHTML = `${nameValue} mau bantu ${eventTitle} sebagai:`;
             h2Assignment.className =
               "text-gray-950 text-xl font-bold text-center";
             sectionAssignment.appendChild(divAssignment);
@@ -383,11 +315,9 @@ document.getElementById("buttonBack").addEventListener("click", function () {
   // Get the necessary DOM elements
   const namaJadwalWrapper = document.getElementById("nama-jadwal-wrapper");
   const namaPIC = document.getElementById("nama-pic");
-  const jadwalPiket = document.getElementById("jadwal-piket");
 
   namaJadwalWrapper.classList.remove("hidden");
   namaPIC.classList.remove("hidden");
-  jadwalPiket.classList.remove("hidden");
 
   const lunchStatus = document.getElementById("lunch-status");
   if (lunchStatus) {
@@ -396,7 +326,6 @@ document.getElementById("buttonBack").addEventListener("click", function () {
   }
   document.getElementById("pic-ahad").classList.add("hidden");
   document.getElementById("button-submit").classList.add("hidden");
-  document.getElementById("jadwal-piket").classList.remove("hidden");
   document.getElementById("button-lanjut").classList.remove("hidden");
 });
 
@@ -419,15 +348,16 @@ document.getElementById("button-submit").addEventListener("click", function () {
   // Get the input values
   const nameValue = document.querySelector("#nama-pic input").value;
 
-  // Get the selected date value (if any)
-  const selectedRadio = document.querySelector(
-    "input[name='dateOption']:checked"
-  );
-  const selectedDateValue = selectedRadio ? selectedRadio.value : null;
-  const label = selectedRadio.nextSibling;
+  const h1Date = document.querySelector("h1");
+  const datePicked = h1Date.getAttribute("data-id");
+  const dateFormatted = new Date(datePicked).toLocaleDateString("id-ID", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
 
   // Create a Date object from the date string
-  const date = new Date(selectedDateValue);
+  const date = new Date(datePicked);
 
   // Create the Firestore Timestamp
   const contributionDateValue = Timestamp.fromDate(date);
@@ -511,7 +441,7 @@ document.getElementById("button-submit").addEventListener("click", function () {
 
       // Show success snackbar
       showSnackbar(
-        `Berhasil menambahkan ${nameValue} ke jadwal piket pada hari Ahad, ${label.innerHTML}`,
+        `Berhasil menambahkan ${nameValue} ke jadwal piket pada hari Ahad, ${dateFormatted}`,
         "success"
       );
 

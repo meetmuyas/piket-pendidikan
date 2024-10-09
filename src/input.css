@@ -68,3 +68,7 @@ label {
 #scrollButton {
   transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Smooth transition for left and right padding */
 }
+
+input {
+  touch-action: manipulation;
+}
