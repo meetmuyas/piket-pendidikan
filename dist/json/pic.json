@@ -22,8 +22,14 @@
           "desc": "Membantu"
         },
         "pic4": {
-          "picId": "bOKons",
-          "type": "PIC Konsumsi",
+          "picId": "bOAntarKons",
+          "type": "PIC Pengantar Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "bOMarbot",
+          "type": "PIC Bayar Sewa Marbot",
           "quota": "(Min. 1 orang)",
           "desc": "Membantu"
         }
@@ -87,7 +93,13 @@
         },
         "pic4": {
           "picId": "sAODokKons",
-          "type": "PIC Dokumentasi & Konsumsi",
+          "type": "PIC Dokumentasi & Pengantar Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "sAOMarbot",
+          "type": "PIC Bayar Sewa Marbot",
           "quota": "(Min. 1 orang)",
           "desc": "Membantu"
         }
@@ -169,7 +181,13 @@
         },
         "pic4": {
           "picId": "sLODokKons",
-          "type": "PIC Dokumentasi & Konsumsi",
+          "type": "PIC Dokumentasi & Pengantar Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "sLOMarbot",
+          "type": "PIC Bayar Sewa Marbot",
           "quota": "(Min. 1 orang)",
           "desc": "Membantu"
         }
@@ -251,7 +269,13 @@
         },
         "pic4": {
           "picId": "mOKons",
-          "type": "PIC Konsumsi",
+          "type": "PIC Pengantar Konsumsi",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        },
+        "pic5": {
+          "picId": "mOMarbot",
+          "type": "PIC Bayar Sewa Marbot",
           "quota": "(Min. 1 orang)",
           "desc": "Membantu"
         }
