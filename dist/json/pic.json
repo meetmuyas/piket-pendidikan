@@ -305,6 +305,17 @@
       }
     },
     {
+      "event": "special-angdas",
+      "assignments": {
+        "pic1": {
+          "picId": "speCAPIC",
+          "type": "PIC",
+          "quota": "(Min. 1 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
       "event": "after-sii-lanjutan-offline",
       "assignments": {
         "pic1": {
@@ -317,6 +328,17 @@
           "picId": "asLOSupp",
           "type": "Supporting",
           "quota": "(Min. 5 orang)",
+          "desc": "Membantu"
+        }
+      }
+    },
+    {
+      "event": "special-lanjutan",
+      "assignments": {
+        "pic1": {
+          "picId": "speCLPIC",
+          "type": "PIC",
+          "quota": "(Min. 1 orang)",
           "desc": "Membantu"
         }
       }

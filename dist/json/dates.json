@@ -226,8 +226,8 @@
         "bsq-peserta": ["BSQ", "via-zoom", "bsq-via-zoom", "07:30 - 10:30"],
         "after-sii-angdas": [
           "Tafaqquh Fiddin",
-          "offline",
-          "after-sii-angdas-offline",
+          "via-zoom",
+          "special-angdas",
           "Tentative"
         ]
       }
