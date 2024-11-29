@@ -344,12 +344,6 @@
       "dateOfPendidikan": "2024-11-30T17:00:00Z",
       "events": {
         "bsq-peserta": ["BSQ", "offline", "bsq-offline", "07:30 - 10:30"],
-        "sii-angdas": [
-          "SII Angdas",
-          "offline",
-          "sii-angdas-offline",
-          "09:30 - 12:30"
-        ],
         "bsq-mentor": [
           "Talaqqi Mentor",
           "offline",
